@@ -1,0 +1,552 @@
+*{
+    margin: 0;
+}
+
+.mainNav {
+    background-color: white;
+    height: 80px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#logo {
+    width: 140px;
+    height: 80px;
+    line-height: 80px;
+    padding-left: 20px;
+}
+
+.mainNav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+.mainNav ul li{
+    display: inline-block;
+    line-height: 80px;
+}
+
+.mainNav ul li a{
+    font-family: 'Poppins', sans-serif;
+    color: #1e9fbf;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.navText:hover{
+    background: gainsboro;
+    transition: .5s;
+    padding: 10px;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color:#1e9fbf;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+    margin-right: 40px;
+}
+
+#sidebar {
+    display: none;
+}
+
+#mainimg {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.subheading {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    top: 240px;
+    position: absolute;
+    width: 100%;
+    font-size: 6em;
+    margin-left: 30px;
+}
+
+.container1 {
+  position: relative;
+  color: white;
+}
+
+.koshead {
+    font-family: 'Poppins', sans-serif;
+    color: #3cb1cf;
+    font-size: 1.8em;
+    text-align: left;
+    font: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#para1 {
+    color: rgb(129, 129, 129);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+    text-align: justify;
+    width: fit-content;
+}
+
+
+#kosImg {
+    width: 400px;
+    height: 250px;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: transform 1s;
+}
+
+#kosImg:hover {
+    transform: scale(1.1);
+}
+
+.grid3 {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: 700px 400px;
+    justify-content: center;
+    align-content: space-around;
+    margin: 50px;
+}
+
+
+.quicktiphead {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-family: 'Poppins', sans-serif ;
+    text-align: center;
+    padding: 4px;
+    color: #3cb1cf;
+    margin-bottom: 5px;
+    justify-content: center;
+}
+
+.quicktips {
+    font-family: 'Poppins', sans-serif ;
+    text-align: left;
+    padding: 4px;
+    color: rgb(129, 129, 129);
+    font-size: 1em;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+#kosMap {
+    width: 400px;
+    height: auto;
+    border: 0;
+}
+
+.part1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.part2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.part3 {
+    width: 300px;
+    height: auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    background-color: #f2eeee;
+}
+
+.part4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.part5 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.part6 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: auto;
+}
+
+.footer {
+    background-color: #1e9fbf;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+.footercontainer {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8em;
+    color: white;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+.itemhead {
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.item {
+    font-family: 'Poppins', sans-serif;
+    padding: 40px;
+    text-align: left;
+}
+
+.item a{
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+}
+
+.item li{
+    list-style-type: none;
+}
+
+.item a:hover {
+    text-decoration: underline;
+}
+
+h4{
+    font-family: 'Poppins', sans-serif ;
+    text-align: center;
+    padding: 4px;
+    color: #3cb1cf;
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 500px) {
+    .container1{
+        z-index: -1;
+        width: 100%;
+    }
+
+    #mainimg {
+        width: 100%;
+        height: 200px;
+        margin: 0;
+    }
+
+    .subheading {
+    top: 105px;
+    position: absolute;
+    width: 100%;
+    font-size: 3em;
+    margin-left: 25px;
+    color: white;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .footer {
+        width: 100%;
+        margin: 0;
+    }
+
+    .footercontainer {
+        display: block;
+        font-size: 0.6em;
+        text-align: left;
+    }
+    
+    .item {
+        font-family: 'Poppins', sans-serif;
+        padding: 10px;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    .mainNav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    #sidebar:checked ~ ul{
+        left: 0;
+        display: block;
+    }
+
+    .mainNav ul {
+        position: fixed;
+        width: 200px;
+        height: 100vh;
+        background-color: #f2eeee;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .mainNav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .grid3{
+        display: block;
+    }
+
+    .part2 {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .part6 {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .part5 {
+        justify-content: center;
+        text-align: center; 
+        margin-top: 20px;
+        width: fit-content;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .part3 {
+        width: fit-content;
+        margin: 20px;
+        padding: 20px;
+        justify-content: center;
+        margin: auto;
+    }
+
+     #kosImg {
+        width: 270px;
+        height: auto;
+        margin: 0;
+        text-align: center;
+        padding: 0;
+     }
+
+     #kosMap {
+        width: 270px;
+        margin: 0;
+        justify-content: center;
+        height: auto;
+    }
+
+    
+
+}
+
+@media only screen and (max-width:1000px) and (min-width:501px){
+    .container1{
+        z-index: -1;
+    }
+
+    #mainimg {
+        width: 100%;
+        height: 300px;
+    }
+
+    .subheading {
+        top: 190px;
+        position: absolute;
+        width: 100%;
+        font-size: 3.5em;
+        margin-left: 10px;
+    }
+
+    .item {
+        font-family: 'Poppins', sans-serif;
+        padding: 10px;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    .mainNav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    #sidebar:checked ~ ul{
+        left: 0;
+        display: block;
+    }
+
+    .mainNav ul {
+        position: fixed;
+        width: 100;
+        height: 100vh;
+        background: #f2eeee;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .mainNav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .grid3{
+        display: block;
+    }
+
+    .part2 {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .part6 {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .part5 {
+        justify-content: center;
+        text-align: center; 
+        margin-top: 40px;
+    }
+
+    #kosImg {
+        width: 300px;
+        height: auto;
+        margin: 0;
+        text-align: center;
+        padding: 0;
+     }
+
+     #kosMap {
+        width: 270px;
+        margin: 0;
+        justify-content: center;
+        height: auto;
+    }
+
+    .part3 {
+        width: 300px;
+        height: auto;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+    }
+
+
+
+}
+
+@media only screen and (max-width:1300px) and (min-width:1001px){
+    .container1{
+        z-index: -1;
+    }
+
+    #mainimg {
+        width: 100%;
+        height: 400px;
+    }
+
+    .subheading {
+        top: 260px;
+        position: absolute;
+        width: 100%;
+        font-size: 5em;
+        margin-left: 10px;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    .mainNav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    #sidebar:checked ~ ul{
+        left: 0;
+        display: block;
+    }
+
+    .mainNav ul {
+        position: fixed;
+        width: 100;
+        height: 100vh;
+        background: #f2eeee;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .mainNav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .grid3{
+        display: block;
+    }
+
+    .part2 {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .part6 {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .part5 {
+        justify-content: center;
+        text-align: center; 
+        margin-top: 40px;
+    }
+
+}
+
+
